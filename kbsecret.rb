@@ -1,8 +1,8 @@
 class Kbsecret < Formula
   desc "A secret manager backed by Keybase and KBFS"
   homepage "https://kbsecret.github.io"
-  url "https://github.com/kbsecret/kbsecret/archive/0.9.4.tar.gz"
-  sha256 "56a780b012d84ef2130add0e9e3de8621ccfff73131e53f8df1d453867d40374"
+  url "https://github.com/kbsecret/kbsecret/releases/download/0.9.7/kbsecret-0.9.7.tar.gz"
+  sha256 "42907db543d29451bc24c1859a385b6504ce806ba2c184afe90eaec6c2ae8ffb"
 
   def install
     ENV["GEM_HOME"] = libexec
@@ -10,7 +10,8 @@ class Kbsecret < Formula
     system "gem", "install", "kbsecret-#{version}.gem"
     bin.install libexec/"bin/kbsecret"
     bin.env_script_all_files(libexec/"bin", :GEM_HOME => ENV["GEM_HOME"])
-    # XXX: Manpages.
+    man1.install Dir["man/man1/*.1"]
+    man5.install Dir["man/man5/*.5"]
   end
 
   # XXX: Add test block.
