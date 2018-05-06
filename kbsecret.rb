@@ -1,8 +1,8 @@
 class Kbsecret < Formula
   desc "Secret manager backed by Keybase and KBFS"
   homepage "https://kbsecret.github.io"
-  url "https://github.com/kbsecret/kbsecret/releases/download/1.6.0/kbsecret-1.6.0.tar.gz"
-  sha256 "7ad6f68d8e1613dca91ddbe1f27ca24dd7bc0d160d2df9d5f3a1d64c21a45896"
+  url "https://github.com/kbsecret/kbsecret/releases/download/1.7.1/kbsecret-1.7.1.tar.gz"
+  sha256 "bd0798f6c4259a174fcd621f1917ef4ef8ac3e476a7de9c56801859cfdf0e9f2"
 
   depends_on "ruby"
 
