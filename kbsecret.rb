@@ -4,7 +4,7 @@ class Kbsecret < Formula
   url "https://github.com/kbsecret/kbsecret/releases/download/1.7.3/kbsecret-1.7.3.tar.gz"
   sha256 "9c499e6bb0e35d9de8a69aa40b69e39b2cd22860429407d084232af7ced835e5"
 
-  depends_on "ruby"
+  depends_on :ruby => "2.7"
 
   def install
     ENV["GEM_HOME"] = libexec
